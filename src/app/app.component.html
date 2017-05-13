@@ -1,7 +1,67 @@
-<section class="todoapp">
+<header>
+	<nav class="navbar navbar-fixed-top">
+		<div class="container-fluid ">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img src="assets/images/axit_logo_small.png">
+					</a>
 
-	<app-todo-list-header (add)="onAddTodo($event)"></app-todo-list-header>
-	<app-todo-list [todos]="todos" (toggleComplete)="onToggleTodoComplete($event)" (remove)="onRemoveTodo($event)"></app-todo-list>
-	<app-todo-list-footer [todos]="todos"></app-todo-list-footer>
-
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#axit-nav">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="axit-nav">
+					<ul class="nav navbar-nav pull-right">
+						<li class="active"><a href="#">Features</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Reviews</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+<section>
+	<div class="container-fluid header-banner-container">
+		<div class="container">
+			<div class="row banner-container">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<img src="assets/images/axit_logo_big.png">
+					<h1> Modern Axure Template for beautifull prototypes </h1>
+					<hr/>
+					<div class="banner-text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed commodo ipsum. Curabitur non lorem non nulla pellentesque dapibus in sit amet risus. Curabitur ornare ligula sit amet lorem rutrum, fringilla vestibulum diam volutpat.
+						</p>
+					</div>
+					<button type="button" class="btn btn-custom-primary"> Download </button>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="banner-register-form">
+						<form class="form">
+							<p>Try Your FREE Trial Today</p>
+							<div class="form-group">
+								<input type="text" name="name" placeholder="Name" />
+							</div>
+							<div class="form-group">
+								<input type="text" name="email" placeholder="Email" />
+							</div>
+							<div class="form-group">
+								<input type="password" name="password" placeholder="Password" />
+							</div>
+							<button>Get Started</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
+
+
